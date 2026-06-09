@@ -1,4 +1,4 @@
-import type { Theme } from './types'
+import type { Theme } from './types.js'
 
 export const synthwave84: Theme = {
   id: 'synthwave-84',

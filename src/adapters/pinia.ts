@@ -1,8 +1,8 @@
 import { defineStore } from 'pinia'
 import { ref, computed } from 'vue'
-import type { ThemeId } from '../themes/types'
-import { themes, DEFAULT_THEME_ID } from '../themes'
-import { resolveThemeId } from '../bootstrap'
+import type { ThemeId } from '../themes/types.js'
+import { themes, DEFAULT_THEME_ID } from '../themes/index.js'
+import { resolveThemeId } from '../bootstrap/index.js'
 
 export interface ThemeStoreOptions {
   /** Pinia store id. Default: 'theme'. */

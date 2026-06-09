@@ -1,6 +1,6 @@
-import type { ThemeId } from '../themes/types'
-import { themes, themeList, DEFAULT_THEME_ID } from '../themes'
-import { toCssVariables } from '../css/variables'
+import type { ThemeId } from '../themes/types.js'
+import { themes, themeList, DEFAULT_THEME_ID } from '../themes/index.js'
+import { toCssVariables } from '../css/variables.js'
 
 /**
  * Serializable map of theme id -> CSS custom property record. Dependency-free

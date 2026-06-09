@@ -1,4 +1,4 @@
-import type { ThemeColors } from '../themes/types'
+import type { ThemeColors } from '../themes/types.js'
 
 /**
  * Canonical mapping of semantic color keys to CSS custom property names.

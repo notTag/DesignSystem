@@ -1,4 +1,4 @@
-import type { ThemeColors } from '../themes/types'
+import type { ThemeColors } from '../themes/types.js'
 
 /**
  * xterm.js-compatible theme shape. Structurally matches `@xterm/xterm`'s

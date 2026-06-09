@@ -1,6 +1,6 @@
 import { watch, type Ref } from 'vue'
-import type { Theme } from '../themes/types'
-import { applyThemeToElement } from '../css/applyTheme'
+import type { Theme } from '../themes/types.js'
+import { applyThemeToElement } from '../css/applyTheme.js'
 
 /**
  * Vue adapter (optional entry point: `@nick_tag_tech/themes/vue`).

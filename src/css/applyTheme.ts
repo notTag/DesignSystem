@@ -1,5 +1,5 @@
-import type { Theme } from '../themes/types'
-import { toCssVariables } from './variables'
+import type { Theme } from '../themes/types.js'
+import { toCssVariables } from './variables.js'
 
 /**
  * Apply a theme to a DOM element by writing CSS custom properties and a
