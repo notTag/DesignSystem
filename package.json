@@ -5,13 +5,13 @@
   "type": "module",
   "license": "MIT",
   "author": "nicktag <wakelax@gmail.com>",
-  "homepage": "https://github.com/nicktag/DesignSystem#readme",
+  "homepage": "https://github.com/notTag/DesignSystem#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nicktag/DesignSystem.git"
+    "url": "git+https://github.com/notTag/DesignSystem.git"
   },
   "bugs": {
-    "url": "https://github.com/nicktag/DesignSystem/issues"
+    "url": "https://github.com/notTag/DesignSystem/issues"
   },
   "keywords": [
     "theme",
