@@ -3,3 +3,9 @@ dist/
 *.log
 .DS_Store
 bun.lock
+
+# Node V8 module compile cache (written during local node/npm runs)
+node-compile-cache/
+
+# npm pack / publish tarballs
+*.tgz
