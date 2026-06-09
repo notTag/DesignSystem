@@ -1,0 +1,58 @@
+{
+  "name": "@nicktag/themes",
+  "version": "0.1.0",
+  "description": "Shared theme catalog and adapters for Nick's apps (web, CLI, Electron). Strongly-typed semantic color tokens, CSS variable + xterm adapters, and first-paint bootstrap.",
+  "type": "module",
+  "license": "UNLICENSED",
+  "private": true,
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./terminal": {
+      "types": "./dist/terminal/terminalTheme.d.ts",
+      "import": "./dist/terminal/terminalTheme.js"
+    },
+    "./bootstrap": {
+      "types": "./dist/bootstrap/index.d.ts",
+      "import": "./dist/bootstrap/index.js"
+    },
+    "./vue": {
+      "types": "./dist/adapters/vue.d.ts",
+      "import": "./dist/adapters/vue.js"
+    },
+    "./pinia": {
+      "types": "./dist/adapters/pinia.d.ts",
+      "import": "./dist/adapters/pinia.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "bun test",
+    "clean": "rm -rf dist"
+  },
+  "peerDependencies": {
+    "pinia": "^2.0.0 || ^3.0.0",
+    "vue": "^3.0.0"
+  },
+  "peerDependenciesMeta": {
+    "vue": {
+      "optional": true
+    },
+    "pinia": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "pinia": "^3.0.0",
+    "typescript": "^5.6.0",
+    "vue": "^3.5.0"
+  }
+}
