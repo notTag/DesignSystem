@@ -1,5 +1,7 @@
 # @nick_tag_tech/themes
 
+> Published on npm: https://www.npmjs.com/package/@nick_tag_tech/themes
+
 One source of truth for Nick's color themes across every project — SPAs, web
 apps, Electron apps, and terminal/CLI experiences. Strongly-typed semantic color
 tokens, a framework-agnostic core, and optional Vue/Pinia/terminal adapters.
@@ -12,7 +14,7 @@ Ported verbatim from `nicktagportal` (`packages/types/src/themes`). 17 themes,
 ```bash
 bun add @nick_tag_tech/themes
 # or consume by Git URL during early integration:
-bun add github:nicktag/DesignSystem
+bun add github:notTag/DesignSystem
 ```
 
 `vue` and `pinia` are optional peer dependencies (only needed for those adapters).
