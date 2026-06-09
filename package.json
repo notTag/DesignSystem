@@ -3,9 +3,30 @@
   "version": "0.1.0",
   "description": "Shared theme catalog and adapters for Nick's apps (web, CLI, Electron). Strongly-typed semantic color tokens, CSS variable + xterm adapters, and first-paint bootstrap.",
   "type": "module",
-  "license": "UNLICENSED",
-  "private": true,
+  "license": "MIT",
+  "author": "nicktag <wakelax@gmail.com>",
+  "homepage": "https://github.com/nicktag/DesignSystem#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicktag/DesignSystem.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nicktag/DesignSystem/issues"
+  },
+  "keywords": [
+    "theme",
+    "themes",
+    "color",
+    "design-tokens",
+    "css-variables",
+    "xterm",
+    "vue",
+    "pinia"
+  ],
   "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "files": [
     "dist"
   ],
@@ -35,7 +56,8 @@
     "build": "tsc -p tsconfig.build.json",
     "typecheck": "tsc --noEmit",
     "test": "bun test",
-    "clean": "rm -rf dist"
+    "clean": "rm -rf dist",
+    "prepublishOnly": "bun run clean && bun run typecheck && bun test && bun run build"
   },
   "peerDependencies": {
     "pinia": "^2.0.0 || ^3.0.0",
