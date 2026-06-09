@@ -12,7 +12,7 @@ export interface ThemeStoreOptions {
 }
 
 /**
- * Pinia adapter (optional entry point: `@nicktag/themes/pinia`).
+ * Pinia adapter (optional entry point: `@nick_tag_tech/themes/pinia`).
  *
  * Factory that builds a theme store preserving the nicktagportal contract:
  * confirmed id + transient preview id, localStorage persistence, and a

@@ -1,4 +1,4 @@
-# @nicktag/themes
+# @nick_tag_tech/themes
 
 One source of truth for Nick's color themes across every project — SPAs, web
 apps, Electron apps, and terminal/CLI experiences. Strongly-typed semantic color
@@ -10,7 +10,7 @@ Ported verbatim from `nicktagportal` (`packages/types/src/themes`). 17 themes,
 ## Install
 
 ```bash
-bun add @nicktag/themes
+bun add @nick_tag_tech/themes
 # or consume by Git URL during early integration:
 bun add github:nicktag/DesignSystem
 ```
@@ -29,7 +29,7 @@ import {
   type Theme,
   type ThemeColors,
   type ThemeId,
-} from '@nicktag/themes'
+} from '@nick_tag_tech/themes'
 
 // Apply to <html> (writes --color-* vars + data-theme-type)
 applyThemeToElement(themes['solarized-dark'])
@@ -45,7 +45,7 @@ Inline this in `<head>` before your bundle to apply the saved theme
 synchronously:
 
 ```ts
-import { createBootstrapScript } from '@nicktag/themes/bootstrap'
+import { createBootstrapScript } from '@nick_tag_tech/themes/bootstrap'
 
 const inline = createBootstrapScript('nicksite-theme')
 // <script>${inline}</script>
@@ -57,7 +57,7 @@ logic.
 ## Terminal / xterm
 
 ```ts
-import { toTerminalTheme } from '@nicktag/themes/terminal'
+import { toTerminalTheme } from '@nick_tag_tech/themes/terminal'
 
 terminal.options.theme = toTerminalTheme(themes['hermes'].colors)
 ```
@@ -69,11 +69,11 @@ The returned shape is structurally compatible with `@xterm/xterm`'s `ITheme`
 
 ```ts
 // Pinia store factory — preserves preview/confirm + localStorage persistence
-import { createThemeStore } from '@nicktag/themes/pinia'
+import { createThemeStore } from '@nick_tag_tech/themes/pinia'
 export const useThemeStore = createThemeStore({ storageKey: 'nicksite-theme' })
 
 // Vue effect — applies the reactive theme to the DOM on change
-import { useThemeEffect } from '@nicktag/themes/vue'
+import { useThemeEffect } from '@nick_tag_tech/themes/vue'
 import { storeToRefs } from 'pinia'
 
 const { currentTheme } = storeToRefs(useThemeStore())
@@ -121,12 +121,12 @@ bun run build     # emit ESM + .d.ts to dist/
 
 ## Migrating nicktagportal
 
-1. Add `@nicktag/themes` as a dependency.
-2. Replace imports from `@/themes` / `@ntypes/themes` with `@nicktag/themes`.
+1. Add `@nick_tag_tech/themes` as a dependency.
+2. Replace imports from `@/themes` / `@ntypes/themes` with `@nick_tag_tech/themes`.
 3. Swap the local `useTheme` CSS-var application for `applyThemeToElement` /
    `useThemeEffect`, and the local stores for `createThemeStore`.
 4. Replace the CLI's `toXtermTheme` with `toTerminalTheme` from
-   `@nicktag/themes/terminal`.
+   `@nick_tag_tech/themes/terminal`.
 5. Move first-paint bootstrap to `createBootstrapScript`.
 6. Keep temporary re-exports in `packages/types/src/themes` if needed, then
    delete the duplicated theme files once consumers are migrated.

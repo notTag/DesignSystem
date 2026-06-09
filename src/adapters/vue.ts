@@ -3,7 +3,7 @@ import type { Theme } from '../themes/types'
 import { applyThemeToElement } from '../css/applyTheme'
 
 /**
- * Vue adapter (optional entry point: `@nicktag/themes/vue`).
+ * Vue adapter (optional entry point: `@nick_tag_tech/themes/vue`).
  *
  * Watches a reactive `Theme` source and applies it to the DOM (CSS variables
  * + `data-theme-type`) immediately and on every change. Persistence is left
