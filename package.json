@@ -1,6 +1,6 @@
 {
   "name": "@nick_tag_tech/themes",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Shared theme catalog and adapters for Nick's apps (web, CLI, Electron). Strongly-typed semantic color tokens, CSS variable + xterm adapters, and first-paint bootstrap.",
   "type": "module",
   "license": "MIT",
